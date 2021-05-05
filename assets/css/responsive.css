@@ -11,8 +11,13 @@
     .banner-text h3 {
         font-size: 40px;
     }
+    .progessbar-wrapper h3::before {
+        left: 30px;
+    }
+    .testimonial-active {
+        width: 100%;
+    }
 }
-
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 992px) {
@@ -23,8 +28,53 @@
     .banner-text h3 {
         font-size: 36px;
     }
+    .mokup {
+        margin-top: 50px;
+    }
+    .header-transparent {
+        padding: 36px 40px;
+    }
+    .logo {
+        padding: 10px 0px;
+    }
+    .banner-section {
+        height: 800px;
+    }
+    .btn-box a {
+        margin-left: 0px;
+    } 
+    .btn-box a {
+        font-size: 18px;
+        padding: 13px 20px;
+    }
+    .btn-style-one::before {
+        left: 5%;
+    }
+    .btn-style-one::after {
+        right: -9%;
+        width: 30px;
+    }
+    .btn-box.other a {
+        margin-left: 14px;
+    }
+    .btn-style-two::before {
+        left: 20%;
+    }
+    .progessbar-wrapper h3 {
+        padding: 0px 76px;
+    }
+    .progessbar-wrapper h3::before {
+        left: 118px;
+    }
+    .service-btn .btn-style-one::before {
+        background: #05fab8;
+        left: 5%;
+    }
+    .portfolio-hero.owl-carousel .owl-nav div.owl-prev {
+        right: 27%;
+    }
 }
-
+ 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
@@ -40,15 +90,77 @@
         font-size: 16px;
     }
     .btn-style-one::before {
-        left: 8px;
+        left: 40px;
     }
     .btn-style-two {
         font-size: 16px;
     }
+    .testimonial-title h2::before {
+        left: 15%;
+    } 
+    .logo {
+        padding: 10px 0px;
+    }
+    .btn-box {
+        margin-bottom: 30px;
+    }
+    .section-title h3 span {
+        font-size: 58px;
+    }
+    .client-icon {
+        text-align: center;
+    }
+    .section-title h3 {
+        font-size: 40px;
+    }
+    .education-text p {
+        margin-right: 0rem;
+    }
+    .testimonial-title h2 {
+        font-size: 40px;
+    }
+    .testimonial-active {
+        width: 100%;
+    }
+    .client-wrapper h3 {
+        margin-bottom: 40px;
+    }
 }
  
 /* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
 .container {width:450px}
- 
+.testimonial-title h2::before {
+    left: 0%;
+}
+.progessbar-wrapper h3::before {
+	left: 0px;
+}
+.logo {
+    padding: 10px 0px;
+}
+.btn-box {
+	margin-bottom: 30px;
+}
+.section-title h3 span {
+    font-size: 58px;
+}
+.client-icon {
+	text-align: center;
+}
+.section-title h3 {
+    font-size: 40px;
+}
+.education-text p {
+    margin-right: 0rem;
+}
+.testimonial-title h2 {
+	font-size: 40px;
+}
+.testimonial-active {
+	width: 100%;
+}
+.client-wrapper h3 {
+	font-size: 38px;
+}
 }

@@ -1,6 +1,28 @@
 (function ($) {
 "use strict";
 
+// meanmenu
+$('#mobile-menu').meanmenu({
+    meanScreenWidth: "991",
+    meanMenuContainer: '.mobile-menu',
+    
+});
+
+// Stikey Js  
+(function () {
+    var nav = $('.menu-nav-sec');
+    var scrolled = false;
+    $(window).on('scroll', function () {
+      if (120 < $(window).scrollTop() && !scrolled) {
+        nav.addClass('sticky_menu animated fadeInDown').animate({ 'margin-top': '0px' });
+        scrolled = true;
+      }
+      if (90 > $(window).scrollTop() && scrolled) {
+        nav.removeClass('sticky_menu animated fadeInDown').css('margin-top', '0px');
+        scrolled = false
+      }
+    });
+  }());
 
 // service
 $('.portfolio-hero').owlCarousel({
