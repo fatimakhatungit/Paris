@@ -90,7 +90,26 @@ $('.portfolio-hero').owlCarousel({
     }
 })
 
-
+// testimonial-active
+$('.testimonial-active').owlCarousel({
+  loop:true,
+  nav:false,
+  dots:true,
+  autoplay:true,
+   navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+  responsive:{
+      0:{
+          items:1,
+          nav:false
+      },
+      767:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
 
 
 //LightBox / Fancybox
@@ -112,60 +131,6 @@ $('#bar3').barfiller({barColor: "#05fab8"});
 $('#bar4').barfiller({barColor: "#05fab8"});
 $('#bar5').barfiller({barColor: "#05fab8"});
 $('#bar6').barfiller({barColor: "#05fab8"});
-
-
-// const TypeWriter = function(txtElement, words, wait = 3000) {
-//   this.txtElement = txtElement;
-//   this.words = words;
-//   this.txt = '';
-//   this.wordIndex = 0;
-//   this.wait = parseInt(wait, 10);
-//   this.type();
-//   this.isDeleting = false;
-// }
-
-// // Type Method
-// TypeWriter.prototype.type = function() {
-//   // Current index of word
-//   const current = this.wordIndex % this.words.length;
-//   // Get full text of current word
-//   const fullTxt = this.words[current];
-
-//   // Check if deleting
-//   if(this.isDeleting) {
-//     // Remove char
-//     this.txt = fullTxt.substring(0, this.txt.length - 1);
-//   } else {
-//     // Add char
-//     this.txt = fullTxt.substring(0, this.txt.length + 1);
-//   }
-
-//   // Insert txt into element
-//   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-//   // Initial Type Speed
-//   let typeSpeed = 300;
-
-//   if(this.isDeleting) {
-//     typeSpeed /= 2;
-//   }
-
-//   // If word is complete
-//   if(!this.isDeleting && this.txt === fullTxt) {
-//     // Make pause at end
-//     typeSpeed = this.wait;
-//     // Set delete to true
-//     this.isDeleting = true;
-//   } else if(this.isDeleting && this.txt === '') {
-//     this.isDeleting = false;
-//     // Move to next word
-//     this.wordIndex++;
-//     // Pause before start typing
-//     typeSpeed = 500;
-//   }
-
-//   setTimeout(() => this.type(), typeSpeed);
-// }
 
 
 // ES6 Class
@@ -236,6 +201,13 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+
+
+// counterUp
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000
+});
 
 
 })(jQuery);	

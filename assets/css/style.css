@@ -353,8 +353,8 @@ input, select, textarea {
 	text-align: center; }
   
   .social-icon-right > a:hover {
-	color: #f6732e; }
-  
+	color: #05fab8; }
+   
   .instagram {
 	overflow: hidden;
 	margin: 0 -4px; }
@@ -821,6 +821,9 @@ input, select, textarea {
 .client-icon h3 span {
 	color: #05fab8;
 }
+.client-icon h3 .counter{
+	color: #29314b;
+}
 .description h3 {
 	font-size: 24px;
 	color: #29314b;
@@ -1166,12 +1169,12 @@ input, select, textarea {
 	width: 145px;
 	z-index: -1;
 }
-.testimonial-active {
+.testimonial-button {
 	width: 70%;
 	height: 100%;
 	background: #05f9b7;
-	padding: 60px 40px 100px;
-}
+	padding: 70px 40px 140px;
+}  
 .tes-btn .btn-box a:hover {
 		color: #29314b;
 		border-color: #29314b;
@@ -1179,8 +1182,26 @@ input, select, textarea {
 .tes-btn .btn-style-one::before {
 	background: #fff;
 }
+.testimonial-active .owl-dots {
+	position: absolute;
+	right: -30%;
+	text-align: center;
+	bottom: -25%;
+}   
+.testimonial-active .owl-dots div {
+	border: 1px solid #232726;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	border-radius: 50%;
+	display: inline-block;
+} 
+.testimonial-active .owl-dots div.active {
+	background: #232726;
+	border: 1px solid #232726;
+}
 /* client-section */
-
+ 
 .client-section{
 	background: url(../img/background/03.jpg) no-repeat scroll center center / cover;
 	padding: 100px 30px;
