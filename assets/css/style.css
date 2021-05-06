@@ -327,6 +327,12 @@ input, select, textarea {
 	-ms-transform: translateX(0);
 	transform: translateX(0); }
   
+	.logo-side h1 {
+		font-size: 30px;
+		color: #fff;
+		font-weight: 600;
+		text-transform: capitalize;
+	} 
 	.side-column .contact-info p {
 		color: #fff;
 		font-size: 18px;
