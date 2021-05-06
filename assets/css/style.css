@@ -268,6 +268,121 @@ input, select, textarea {
 	-webkit-backface-visibility: hidden;
 }   
 
+
+
+/* extra info */
+.extra-info {
+	background: #29314b;
+	height: 100%;
+	padding: 30px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+	width: 340px;
+	z-index: 9999;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	padding-bottom: 40px; }
+  
+  .extra-info.info-open {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0); }
+  
+  .extra-info-left {
+	right: inherit;
+	left: 0;
+	-webkit-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%); }
+  
+  .extra-info.extra-info-left.info-open {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0); }
+  
+  .close-icon {
+	margin-top: -16px;
+	text-align: right; }
+  
+  .close-icon > button {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 0 none;
+	color: #05fab8;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 0; }
+   
+  .extra-info > p {
+	color: #ddd;
+	font-size: 15px;
+	line-height: 28px; }
+  
+  .extra-info.extra-info-left.info-open {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0); }
+  
+	.side-column .contact-info p {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 400;
+		margin-top: 12px;
+	} 
+	.side-column ul li a {
+		color: #05fab8;
+		font-size: 24px;
+	}
+  .instagram img {
+	width: 100%; }
+  
+  .social-icon-right > a {
+	color: #fff;
+	display: inline-block;
+	margin-right: 20px;
+	text-align: center; }
+  
+  .social-icon-right > a:hover {
+	color: #f6732e; }
+  
+  .instagram {
+	overflow: hidden;
+	margin: 0 -4px; }
+  
+  .instagram > a {
+	float: left;
+	width: 33.33%;
+	padding: 0 4px;
+	margin-bottom: 7px; }
+  
+  .side-info {
+	border-top: 1px solid #bdbdbd;
+	padding-top: 25px; }
+   
+  .contact-list h4 {
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px; }
+  
+  .contact-list p {
+	color: #fff;
+	opacity: .5;
+	margin: 0;
+	margin-bottom: 5px;
+	line-height: 28px; }
+  
+  .side-menu ul li:hover a {
+	color: #f6732e; }
+  
+
+	/* Cursor */
+.txt-type > .txt {
+	border-right: 0.2rem solid #fff;
+  }
 /*Start Progress Bar*/
 .barfiller {
     width:100%;
