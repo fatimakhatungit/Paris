@@ -76,13 +76,11 @@ a.meanmenu-reveal {
 	margin: 0;
 	text-align: left;
 	color: #fff;
-	/*border-top: 1px solid #383838;
-	border-top: 1px solid rgba(255,255,255,0.5);*/
+	/*! border-top: 1px solid #fff; */ border-top: 1px solid rgba(255,255,255,0.5);
 	text-decoration: none;
 	text-transform: uppercase;
 	/*! background: none; */
 }
-
 .mean-container .mean-nav ul li li a {
 	width: 80%;
 	padding: 1em 10%;

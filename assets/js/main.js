@@ -2,11 +2,21 @@
 "use strict";
 
 // meanmenu
+
 $('#mobile-menu').meanmenu({
-    meanScreenWidth: "991",
-    meanMenuContainer: '.mobile-menu',
-    
+
+	meanMenuContainer: '.mobile-menu',
+
+	meanScreenWidth: "991",
+
+	onePage: true
+
 });
+// $('#mobile-menu').meanmenu({
+//     meanScreenWidth: "991",
+//     meanMenuContainer: '.mobile-menu',
+    
+// });
 
 // Stikey Js  
 (function () {
